@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "4a7f2ba7-fe0a-4f9f-ac36-ff2ea9645974",
+		"name": "Simple load balancer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10807739",
+		"_collection_link": "https://space-port-2327.postman.co/workspace/Team-Workspace~9bbd6f23-177a-49b7-8797-da12743e9146/collection/10807739-4a7f2ba7-fe0a-4f9f-ac36-ff2ea9645974?action=share&source=collection_link&creator=10807739"
+	},
+	"item": [
+		{
+			"name": "Load balancer Registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "host",
+						"value": "localhost:8001",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Proxy",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
